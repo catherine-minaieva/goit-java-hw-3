@@ -5,9 +5,8 @@ public class ATM {
         int quantity;
         int i = 0;
         while (i < nominals.length){
-            quantity = nominals[i];
-            banknotes += sum / quantity;
-            sum %= quantity;
+            banknotes += sum / nominals[i];
+            sum %= nominals[i];
             i++;
         }
 
